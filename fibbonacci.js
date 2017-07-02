@@ -27,10 +27,4 @@ function fibbonacciSequence(quantity) {
   })
 }
 
-function longestNum(array) {
-
-}
-
-
-
 fibbonacciSequence(quantity)
