@@ -20,5 +20,4 @@ function characterCounter(string) {
   })
 }
 
-
 console.log(characterCounter(string1))
