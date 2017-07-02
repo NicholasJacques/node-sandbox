@@ -1,6 +1,6 @@
 var pry = require('pryjs')
 
-var quantity = 15
+var quantity = 40
 
 function fibbonacciSequence(quantity) {
   var nums = []
@@ -14,10 +14,11 @@ function fibbonacciSequence(quantity) {
     }
   }
   var fives = []
+  var padding = Math.max(...nums).toString().length + 1
   for (var i = 0; i < nums.length - 4; i+=5) {
     var snippet = nums.slice(i, i + 5)
     paddedNums = snippet.map(function (number) {
-      return number.toString().padStart(5)
+      return number.toString().padStart(padding)
     })
     fives.push(paddedNums.join(' '))
   }
@@ -25,5 +26,11 @@ function fibbonacciSequence(quantity) {
     console.log(line)
   })
 }
+
+function longestNum(array) {
+
+}
+
+
 
 fibbonacciSequence(quantity)
